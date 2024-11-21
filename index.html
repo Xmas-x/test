@@ -20,33 +20,24 @@
             top: 10px; /* 距離頂部的距離 */
             right: 10px; /* 距離右側的距離 */
             display: flex;
-            flex-direction: row; /* 垂直排列按鈕 */
+            flex-direction: row; /* 水平排列按鈕 */
             gap: 15px; /* 按鈕之間的距離 */
         }
 
-        /* 單個社交按鈕 */
-        .social-button {
-            display: inline-block;
-            width: 50px; /* 原 50px，增大 10% */
-            height: 50px; /* 原 50px，增大 10% */
-            border-radius: 50%;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        /* 圖片自適應按鈕大小 */
-        .social-button img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* 確保圖片保持適合範圍內 */
-            border-radius: 50%;
+        /* 單個按鈕圖片 */
+        .social-buttons img {
+            width: 40px; /* 控制圖片大小 */
+            height: 40px; /* 保持比例 */
+            object-fit: cover; /* 確保圖片填充區域 */
+            border-radius: 50%; /* 使圖片圓潤 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* 動態效果 */
         }
 
         /* 鼠標懸停效果 */
-        .social-button:hover {
-            transform: scale(1.1); /* 放大按鈕 */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        .social-buttons img:hover {
+            transform: scale(1.1); /* 放大圖片 */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 增強陰影 */
         }
     </style>
 </head>
@@ -54,14 +45,13 @@
     <!-- 社交按鈕 -->
     <div class="social-buttons">
         <!-- Telegram 按鈕 -->
-        <a href="https://t.me/your_telegram_channel" class="social-button" target="_blank">
+        <a href="https://t.me/your_telegram_channel" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
         </a>
         <!-- Twitter 按鈕 -->
-        <a href="https://twitter.com/your_twitter_handle" class="social-button" target="_blank">
+        <a href="https://twitter.com/your_twitter_handle" target="_blank">
             <img src="https://pump.fun/_next/image?url=%2Flogo.png&w=64&q=75" alt="Twitter">
         </a>
     </div>
 </body>
 </html>
-

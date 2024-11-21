@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Links</title>
-    <link rel="icon" type="image/png" href="https://i.ibb.co/NZnqDXY/pump-fun-5d8a46348f54c976f89b.png">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/y5258Gz/santa.png">
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: #ffebe0;
             margin: 0;
-            padding: 50px 0;
+            padding: 0;
+            position: relative;
         }
 
+        /* 社交按鈕容器：右上角定位 */
         .social-buttons {
+            position: absolute;
+            top: 10px; /* 距離頂部的距離 */
+            right: 10px; /* 距離右側的距離 */
             display: flex;
-            justify-content: center;
-            gap: 20px; /* 間距 */
-            margin-top: 20px;
+            flex-direction: column; /* 垂直排列按鈕 */
+            gap: 15px; /* 按鈕之間的距離 */
         }
 
+        /* 單個社交按鈕 */
         .social-button {
             display: inline-block;
-            width: 50px;
-            height: 50px;
+            width: 60px; /* 原 50px，增大 10% */
+            height: 60px; /* 原 50px，增大 10% */
             border-radius: 50%;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        /* 圖片自適應按鈕大小 */
         .social-button img {
             width: 100%;
             height: 100%;
             border-radius: 50%;
         }
 
+        /* 鼠標懸停效果 */
         .social-button:hover {
-            transform: scale(1.1);
+            transform: scale(1.1); /* 放大按鈕 */
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <h1>Follow Us!</h1>
+    <!-- 社交按鈕 -->
     <div class="social-buttons">
         <!-- Telegram 按鈕 -->
         <a href="https://t.me/your_telegram_channel" class="social-button" target="_blank">
@@ -52,8 +58,9 @@
         </a>
         <!-- Twitter 按鈕 -->
         <a href="https://twitter.com/your_twitter_handle" class="social-button" target="_blank">
-            <img src="https://i.ibb.co/NZnqDXY/pump-fun-5d8a46348f54c976f89b.png" alt="Twitter">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
         </a>
     </div>
 </body>
 </html>
+
